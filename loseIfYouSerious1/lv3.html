@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>認真你就輸了 3</title>
+</head>
+
+<body>
+<img src="./img/index.jpg
+" style="display:block; margin:auto;" />
+<H1 align="center">這個網頁裡有幾個字?(寫數字就好,標點符號不算)</H1>
+<script language="JavaScript">
+function passWord() { 
+var testV = 1; 
+var pass1 = prompt('請輸入你的答案',''); 
+while (testV < 3) { 
+if (!pass1) 
+history.go(-1); 
+if (pass1.toLowerCase() == "2") 
+ { 
+alert('厲害,舉1反3(舉第1題反第3題)'); 
+location.href="./lv4.html";
+break; 
+} 
+testV+=1; 
+var pass1 = 
+prompt('錯誤!!不會數數嗎?','answer'); 
+} 
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1); 
+return " "; 
+} 
+</script> 
+<center> 
+<form> 
+<input type="button" value="此處輸入" onClick="passWord()"> 
+</form> 

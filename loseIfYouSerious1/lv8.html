@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>認真你就輸了 8</title>
+
+</head>
+
+<body>
+<img src="./img/index.jpg
+" style="display:block; margin:auto;" />
+<H1 align="center">1=u&ensp;2=-4&ensp;3=n0&ensp;4=n4&ensp;5=j3&ensp;6=xu.4&ensp;7=fu&ensp;8=18&ensp;9=ru.3&ensp;10=?</H1>
+<BR>
+<center> <input type="text" value="計算紙(不是答案輸入處)"></center> 
+<BR>
+<BR>
+<script language="JavaScript"> 
+function passWord() { 
+var testV = 1; 
+var pass1 = prompt('請輸入你的答案',''); 
+while (testV < 3) { 
+if (!pass1) 
+history.go(-1); 
+if (pass1.toLowerCase() == "g6") 
+ { 
+alert('正確!'); 
+location.href="./lv9.html";
+break; 
+} 
+testV+=1; 
+var pass1 = 
+prompt('提示','輸入法'); 
+} 
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1); 
+return " "; 
+} 
+</script> 
+<center> 
+<form> 
+<input type="button" value="此處輸入" onClick="passWord()"> 
+</form> 
+</body>
+
+</html>
+

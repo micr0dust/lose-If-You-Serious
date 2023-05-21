@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>認真你就輸了 9</title>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html;">
+</head>
+
+<body>
+<img src="./img/index.jpg
+" style="display:block; margin:auto;" />
+<H1 align="center">按了以下連結後,請算算你又再按了幾下[確定]?</H1>
+<H1 align="center">寫數字就好,作答時按的不算</H1>
+<hr>
+
+<SCRIPT>
+function talk() {
+	alert("不是叫你不要按嗎？");
+	alert("為什麼你又按了呢？");
+	alert('如果每個人都像你一樣不聽話，');
+	alert('那麼不就都抓狂了？！');
+	alert('為了懲罰你，你必須再按40次 [確認]！');
+	for (i=0; i<40; i++)
+		alert('第 ' + (i+1) + ' 次！');
+	alert('以後要回饋社會喔！');
+}
+</SCRIPT>
+<H1 align="center"><A href="javascript:talk()">不要按 ! 你會後悔 !</A> </H1>
+
+<hr>
+<script language="JavaScript"> 
+function passWord() { 
+var testV = 1; 
+var pass1 = prompt('答案?',''); 
+while (testV < 3) { 
+if (!pass1) 
+history.go(-1); 
+if (pass1.toLowerCase() == "46") 
+ { 
+alert('正確!這題就這麼簡單!'); 
+location.href="./lv10.html";
+break; 
+} 
+testV+=1; 
+var pass1 = 
+prompt('錯誤!!你再算1次','再不行我也沒辦法了!'); 
+} 
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1); 
+return " "; 
+} 
+</script> 
+<center> 
+<form> 
+<input type="button" value="此處輸入" onClick="passWord()"> 
+</form> 
+</body>
+</html>

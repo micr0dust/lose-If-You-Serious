@@ -1,0 +1,81 @@
+<html>
+<?php
+header("Content-Type:text/html; charset=utf-8");
+?>
+<head>
+<script language="javascript">
+　var Today=new Date();
+</script>
+<title>認真你就輸了(版本2)#1</title>
+
+</head>
+
+<body onload="CheckAlert()">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="./lock.js"></script>
+<script>
+function CheckAlert() 
+{
+    alert("此遊戲不支援手機,請使用電腦google chrome遊玩 !");
+}
+</script>
+<img src="./img/dGYu6I.jpg
+" style="display:block; margin:auto;" />
+<H1 align="center">請輸入今天星期幾?</H1>
+<BR>
+<H2 align="center">星期日 = 0, 星期一 = 1, 星期二 = 2, 星期三 = 3, 星期四 = 4,星期五 = 5, 星期六 = 6</H2>
+<BR>
+<style>
+.img-zoom-animation {
+    width: 50px;
+ }
+ .img-zoom {
+    position: absolute;
+    width: 0px;
+    -webkit-transition: width 0.3s linear 0s;
+    -moz-transition: width 0.3s linear 0s;
+    -ms-transition: width 0.3s linear 0s;
+    -o-transition: width 0.3s linear 0s;
+    transition: width 0.3s linear 0s;
+    z-index: 10;
+ }
+ .img-zoom-animation:hover + .img-zoom {
+    width: 350px;
+ }
+</style>
+
+<a href="#"><img class="img-zoom-animation" src="./img/EJ1Dze.png">
+<img class="img-zoom" src="./img/EJ1Dze.png"style="display:block; margin:auto;" /></a>
+<BR>
+<script language="JavaScript"> 
+function passWord() { 
+var testV = 1; 
+var pass1 = prompt('請輸入今天星期幾?',''); 
+while (testV < 3) { 
+if (!pass1) 
+history.go(-1); 
+if (pass1.toLowerCase() == Today.getDay()) 
+ { 
+alert('正確!你應該沒看圖吧?'); 
+alert('還是今天就剛好星期二?');
+location.href="./2_2hfjgh,.html";
+break;
+} 
+testV+=1; 
+var pass1 = 
+prompt('錯誤!!','看提示?繼續猜?'); 
+} 
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1); 
+return " "; 
+} 
+</script> 
+<center> 
+<form> 
+<input type="button" value="此處輸入" onClick="passWord()"> 
+<input type="button" value="提示" onClick='location.href="./hint2_1vsdjrk;l.html";' > 
+</form> 
+</body>
+
+</html>
+

@@ -1,0 +1,61 @@
+<html>
+<head>
+<script language="javascript">
+　var Today=new Date();
+</script>
+<title>認真你就輸了(版本2)#2</title>
+
+</head>
+
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="./lock.js"></script>
+<img src="./img/dGYu6I.jpg
+" style="display:block; margin:auto;" />
+<H1 align="center">根據下圖,猜一個英文字母,並輸入七次</H1>
+<BR>
+<H1 align="center">假如答案是a,就要輸入aaaaaaa</H1>
+<BR>
+<H2 align="center">a b c d e f g h i j k l m n o p q r s t u v w x y z</H2>
+<BR>
+<H2 align="center">警告!請不要一個一個猜</H2>
+<BR>
+<img src="./img/Qlgj41.png
+" style="display:block; margin:auto;" />
+<BR>
+<script language="JavaScript"> 
+function passWord() { 
+var testV = 1; 
+var pass1 = prompt('請選擇a~z 之中的一個字母',''); 
+while (testV < 3) { 
+if (!pass1) 
+history.go(-1); 
+if (pass1.toLowerCase() == "vvvvvvv") 
+ { 
+alert('正確!你應該沒有一個一個猜吧?'); 
+alert('不然我會很傷心喔');
+location.href="./2_3oi;jki.html";
+break;
+} 
+if (pass1.toLowerCase() == "aaaaaaa") 
+ { 
+alert('不是說好不能猜嗎?'); 
+} 
+testV+=1; 
+var pass1 = 
+prompt('錯誤!!不是說好不能猜嗎?','看提示?繼續想?'); 
+} 
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1); 
+return " "; 
+} 
+</script> 
+<center> 
+<form> 
+<input type="button" value="此處輸入" onClick="passWord()"> 
+<input type="button" value="提示" onClick='location.href="./hint2_2vdhv.html";' > 
+</form> 
+</body>
+
+</html>
+

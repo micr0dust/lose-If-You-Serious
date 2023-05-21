@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>認真你就輸了 4</title>
+
+</head>
+
+<body>
+<img src="./img/index.jpg
+" style="display:block; margin:auto;" />
+<H1 align="center">猜猜正確答案在哪個箱子裡?</H1>
+<BR>
+<img src="./img/5ZNSV6.jpg
+
+" style="display:block; margin:auto;" onclick="alert('錯');"/>
+<BR>
+<img src="./img/2xeDTG.jpg
+
+" style="display:block; margin:auto;" onclick="alert('159');"/>
+<BR>
+<img src="./img/5wm4jF.jpg
+
+" style="display:block; margin:auto;" onclick="alert('231');"/>
+<BR>
+<img src="./img/s1MlKV.jpg
+
+" style="display:block; margin:auto;" onclick="alert('476');"/>
+<BR>
+<img src="./img/YeQGjT.jpg
+
+" style="display:block; margin:auto;" onclick="alert('539');"/>
+<BR>
+<img src="./img/5Y790y.jpg
+
+" style="display:block; margin:auto;" onclick="alert('7749');"/>
+
+<script language="JavaScript">
+function passWord() { 
+var testV = 1; 
+var pass1 = prompt('請輸入你的答案',''); 
+while (testV < 3) { 
+if (!pass1) 
+history.go(-1); 
+if (pass1.toLowerCase() == "錯") 
+ { 
+alert('你找到了對的箱子了,答案是不是讓你想打我?'); 
+location.href="./lv5.html";
+break; 
+} 
+testV+=1; 
+var pass1 = 
+prompt('你找錯箱子嘍 !','答案會是...?'); 
+} 
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1); 
+return " "; 
+}
+</script> 
+<center> 
+<form> 
+<input type="button" value="此處輸入" onClick="passWord()"> 
+</form> 
+</body>
+
+</html>
+
